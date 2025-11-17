@@ -122,7 +122,7 @@
 
     <script>
         function loadReports() {
-            fetch("http://garbagebackend-production.up.railway.app/api/reports")
+            fetch("https://garbagebackend-production.up.railway.app/api/reports")
                 .then(res => res.json())
                 .then(data => {
                     const table = document.getElementById("reportTable");
@@ -189,3 +189,4 @@
 
 </body>
 </html>
+
