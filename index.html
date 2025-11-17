@@ -167,7 +167,7 @@
 
         // Update Status API
         function updateStatus(id, status) {
-            fetch(`http://localhost:8080/api/reports/${id}/status`, {
+            fetch(`https://garbagebackend-production.up.railway.app/api/reports/${id}/status`, {
                 method: "PUT",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ status })
@@ -177,7 +177,7 @@
         // Delete Report API
         function deleteReport(id) {
             if (confirm("Are you sure to delete?")) {
-                fetch(`http://localhost:8080/api/reports/${id}`, {
+                fetch(`https://garbagebackend-production.up.railway.app/api/reports/${id}`, {
                     method: "DELETE"
                 })
                 .then(() => loadReports());
@@ -189,4 +189,5 @@
 
 </body>
 </html>
+
 
